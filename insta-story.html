@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<style>
+#c {
+  position: relative;
+  background: url("1.webp") no-repeat; 
+  height: 210px;
+  width:210px ;
+  border-radius: 100%;
+  background-size: 210px;
+  top: 100px;
+  left: 40vw;
+}
+
+#c::after {
+  content: "";
+  width: 220px;
+  height: 220px;
+  border-radius: 100%;
+  border: 6px solid #CC2697;
+  position: absolute;
+  top: -11px;
+  left: -11px;
+}
+
+#c:hover::after {
+  border: 6px dashed #CC2697;
+  transform: rotate(260deg);
+  transition: linear 10s;
+}
+
+
+</style>
+<body>
+  <div id="c"></div>
+</body>
+</html>
