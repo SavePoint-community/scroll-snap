@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        scroll-behavior: smooth !important;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #header{
+        height: 10vh;
+        width: 100vw;
+        position: fixed;
+        background-color: rgb(236, 223, 206);
+        display: flex;
+    }
+    .logo{
+        margin-left: 20px;
+        line-height: 10vh;
+        width: 70%;
+    }
+    ul{
+        width: 20%;
+        line-height: 10vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section{
+        padding-top: 10vh;
+        line-height: 90vh;
+        height: 90vh;
+        text-align: center;
+        background-color: rgb(68, 66, 52);
+        color: white;
+    }
+    #section1{
+        padding-top: 10vh;
+        background-color: rgb(71, 67, 67);
+    }
+    #section2{
+        background-color: rgb(36, 34, 34);
+    }
+</style>
+
+<body>
+    <div id="header">
+        <div class="logo"><h1>your logo</h1></div>
+        <ul>
+            <li><a href="#section1">section1</a></li>
+            <li><a href="#section2">section2</a></li>
+            <li><a href="#section3">section3</a></li>
+        </ul>
+    </div>
+    <div class="section" id="section1"><H2>S 1</H2></div>
+    <div class="section" id="section2"><H2>S 2</H2></div>
+    <div class="section" id="section3"><H2>S 3</H2></div>
+    
+</body>
+</html>
